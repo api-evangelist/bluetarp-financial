@@ -1,8 +1,25 @@
 aid: bluetarp-financial
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bluetarp-financial.png
 name: BlueTarp Financial
-description: 'BlueTarp Financial is a company surfaced as a portfolio company of trinity-ventures and
-  added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'BlueTarp Financial is a B2B trade-credit and accounts-receivable financing company, founded
+  in Portland, Maine, that lets suppliers, distributors, and building-materials dealers extend revolving
+  or net-terms credit to their business customers while BlueTarp pays the supplier upfront and assumes the
+  credit risk and collections. Its SmartView portal manages the purchase-to-payment lifecycle: credit
+  decisioning, invoicing, billing, and receivables. BlueTarp was acquired and is now operated as Capital
+  One Trade Credit; its independent site (bluetarp.com) redirects to capitalone.com/trade-credit/bluetarp.
+  BlueTarp publishes no public developer portal, API documentation, or SDKs. This API Evangelist profile
+  was surfaced as a portfolio company of Trinity Ventures.'
 url: https://raw.githubusercontent.com/api-evangelist/bluetarp-financial/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,15 +27,35 @@ x-backed-by:
 - trinity-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: capital-one
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Fintech
+- Trade Credit
+- Accounts Receivable
+- B2B Payments
+- Financing
+- Building Materials
+- Credit Management
+common:
+- type: DomainSecurity
+  url: security/bluetarp-financial-domain-security.yml
+- type: Website
+  url: https://www.bluetarp.com/
+- type: Login
+  url: https://www.smartview.bluetarp.com/
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
