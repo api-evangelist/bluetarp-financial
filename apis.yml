@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://www.bluetarp.com/', status: 301, note: 'declared website redirects to https://www.capitalone.com/trade-credit/bluetarp/ — a different registrable domain (bluetarp.com -> capitalone.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bluetarp-financial.png
 name: BlueTarp Financial
 description: 'BlueTarp Financial is a B2B trade-credit and accounts-receivable financing company, founded
